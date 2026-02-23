@@ -87,6 +87,6 @@ Good software should be:
 ## GitHub Stats
 
 ```md
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=animeshsrivastava246&show_icons=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=animeshsrivastava246&show_icons=true&cache_seconds=3600)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=animeshsrivastava246&layout=compact)
