@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="400">
+      <stop offset="0%" stop-color="#0F0C29"/>
+      <stop offset="50%" stop-color="#1a1145"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Stars animation -->
+    <radialGradient id="star">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)" rx="16"/>
+
+  <!-- Ambient particles / stars -->
+  <circle cx="50" cy="30" r="1.5" fill="#a855f7" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="70" r="1" fill="#06b6d4" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="50" r="1.5" fill="#f472b6" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="90" r="1" fill="#a855f7" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="25" r="1.2" fill="#22d3ee" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="300" r="1" fill="#c084fc" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="80" cy="350" r="1.3" fill="#06b6d4" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="380" r="1" fill="#f472b6" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.15;0.4" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Desk -->
+  <rect x="120" y="310" width="560" height="8" rx="4" fill="#1e1b4b" opacity="0.8"/>
+  <rect x="100" y="318" width="600" height="4" rx="2" fill="#312e81" opacity="0.4"/>
+
+  <!-- ===== MONITOR ===== -->
+  <!-- Monitor Stand -->
+  <rect x="370" y="290" width="60" height="20" rx="3" fill="#27245e"/>
+  <rect x="350" y="305" width="100" height="6" rx="3" fill="#312e81"/>
+
+  <!-- Monitor Body -->
+  <rect x="220" y="100" width="360" height="200" rx="12" fill="#1e1b4b" stroke="#312e81" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="232" y="112" width="336" height="176" rx="6" fill="#0d0a1f"/>
+  <!-- Screen glow effect -->
+  <rect x="232" y="112" width="336" height="176" rx="6" fill="url(#screenGlow)" opacity="0.5"/>
+
+  <!-- Code lines on screen -->
+  <g opacity="0.9">
+    <!-- Line 1: keyword -->
+    <rect x="252" y="132" width="45" height="8" rx="2" fill="#c084fc"/>
+    <rect x="303" y="132" width="70" height="8" rx="2" fill="#06b6d4"/>
+    <rect x="379" y="132" width="30" height="8" rx="2" fill="#94a3b8"/>
+    <rect x="415" y="132" width="15" height="8" rx="2" fill="#f472b6"/>
+    <!-- Line 2: indented -->
+    <rect x="270" y="150" width="35" height="8" rx="2" fill="#a855f7"/>
+    <rect x="311" y="150" width="55" height="8" rx="2" fill="#22d3ee"/>
+    <rect x="372" y="150" width="80" height="8" rx="2" fill="#94a3b8" opacity="0.6"/>
+    <!-- Line 3: indented more -->
+    <rect x="288" y="168" width="60" height="8" rx="2" fill="#f472b6"/>
+    <rect x="354" y="168" width="40" height="8" rx="2" fill="#06b6d4"/>
+    <rect x="400" y="168" width="90" height="8" rx="2" fill="#c084fc" opacity="0.7"/>
+    <!-- Line 4: -->
+    <rect x="288" y="186" width="25" height="8" rx="2" fill="#94a3b8" opacity="0.5"/>
+    <rect x="319" y="186" width="65" height="8" rx="2" fill="#22d3ee"/>
+    <rect x="390" y="186" width="45" height="8" rx="2" fill="#a855f7" opacity="0.8"/>
+    <!-- Line 5: closing -->
+    <rect x="270" y="204" width="15" height="8" rx="2" fill="#f472b6"/>
+    <rect x="291" y="204" width="50" height="8" rx="2" fill="#94a3b8" opacity="0.4"/>
+    <!-- Cursor blink -->
+    <rect x="252" y="222" width="2" height="12" fill="#06b6d4">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Monitor light reflection -->
+  <rect x="232" y="112" width="336" height="3" rx="2" fill="#a855f7" opacity="0.15"/>
+
+  <!-- ===== PERSON (minimalist) ===== -->
+  <!-- Head -->
+  <circle cx="400" cy="55" r="28" fill="#2d2a5e" stroke="#a855f7" stroke-width="1.5" opacity="0.9"/>
+  <!-- Glasses -->
+  <rect x="382" y="48" width="14" height="10" rx="3" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+  <rect x="400" y="48" width="14" height="10" rx="3" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+  <line x1="396" y1="53" x2="400" y2="53" stroke="#06b6d4" stroke-width="1"/>
+  <!-- Glasses glint -->
+  <rect x="384" y="50" width="4" height="2" rx="1" fill="#06b6d4" opacity="0.3"/>
+
+  <!-- ===== COFFEE MUG ===== -->
+  <g transform="translate(620, 260)">
+    <rect x="0" y="15" width="30" height="35" rx="5" fill="#27245e" stroke="#a855f7" stroke-width="1" opacity="0.8"/>
+    <path d="M30 22 Q42 22 42 32 Q42 42 30 42" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.6"/>
+    <!-- Steam -->
+    <path d="M8 12 Q12 0 8 -8" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M18 10 Q22 -2 18 -10" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.05;0.25" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- ===== FLOATING BRACKETS ===== -->
+  <!-- Left bracket cluster -->
+  <text x="100" y="180" font-family="monospace" font-size="40" fill="#a855f7" opacity="0.15" filter="url(#softGlow)">&#123;</text>
+  <text x="80" y="230" font-family="monospace" font-size="28" fill="#06b6d4" opacity="0.1">&#60;/&#62;</text>
+
+  <!-- Right bracket cluster -->
+  <text x="660" y="170" font-family="monospace" font-size="40" fill="#06b6d4" opacity="0.15" filter="url(#softGlow)">&#125;</text>
+  <text x="680" y="220" font-family="monospace" font-size="28" fill="#f472b6" opacity="0.1">( )</text>
+
+  <!-- ===== ORBITING DOTS ===== -->
+  <circle cx="160" cy="130" r="4" fill="#a855f7" opacity="0.4" filter="url(#glow)">
+    <animate attributeName="cy" values="130;120;130" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="640" cy="140" r="3" fill="#06b6d4" opacity="0.5" filter="url(#glow)">
+    <animate attributeName="cy" values="140;150;140" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="170" cy="250" r="3" fill="#f472b6" opacity="0.3" filter="url(#glow)">
+    <animate attributeName="cx" values="170;180;170" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="260" r="4" fill="#c084fc" opacity="0.3" filter="url(#glow)">
+    <animate attributeName="cx" values="650;640;650" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ===== PLANT ===== -->
+  <g transform="translate(140, 255)">
+    <rect x="5" y="30" width="20" height="25" rx="3" fill="#27245e" stroke="#312e81" stroke-width="1"/>
+    <path d="M15 30 Q10 15 5 5" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.6"/>
+    <path d="M15 30 Q20 12 28 3" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.5"/>
+    <path d="M15 30 Q15 18 12 8" fill="none" stroke="#16a34a" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="5" cy="4" r="4" fill="#22c55e" opacity="0.4"/>
+    <circle cx="28" cy="2" r="3.5" fill="#22c55e" opacity="0.35"/>
+    <circle cx="12" cy="7" r="3" fill="#16a34a" opacity="0.3"/>
+  </g>
+
+  <!-- Subtle grid pattern in background -->
+  <g opacity="0.03">
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#a855f7" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#a855f7" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#a855f7" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="400" stroke="#a855f7" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="400" stroke="#a855f7" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="400" stroke="#a855f7" stroke-width="0.5"/>
+  </g>
+</svg>
