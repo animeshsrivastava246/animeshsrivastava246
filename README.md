@@ -44,8 +44,8 @@
 ```js
 const animesh = {
     role: "Software Development Engineer",
-    location: "Lucknow, India",
-    languages: ["Java", "Python", "TypeScript", "JavaScript", "SQL"],
+    location: "Bengaluru, India",
+    languages: ["Java", "Python", "TypeScript", "GoLang", "Rust"],
     architecture: ["Microservices", "Event-Driven", "Distributed Systems"],
     currentFocus: "Building systems that handle millions of requests gracefully",
     funFact: "I debug in my dreams"
@@ -73,7 +73,7 @@ const animesh = {
 **`Languages`**
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=java,python,typescript,javascript&theme=dark&perline=8" alt="Languages"/>
+  <img src="https://skillicons.dev/icons?i=java,python,typescript,golang,rust&theme=dark&perline=8" alt="Languages"/>
 </a>
 
 <br/><br/>
